@@ -1,0 +1,12 @@
+{
+	"short_name": "CV - HA",
+	"name": "CV - Holmes Yesid Ayala Yaguara",
+	"icons": [
+		{
+			"src": "favicon.ico",
+			"type": "image/x-icon"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone"
+}

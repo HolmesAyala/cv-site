@@ -1,0 +1,14 @@
+.App {
+	min-height: 100%;
+	overflow: auto;
+	padding: 16px;
+	display: flex;
+	justify-content: center;
+	background: rgb(0, 40, 85);
+	background: linear-gradient(
+		180deg,
+		rgba(0, 40, 85, 1) 33%,
+		rgba(0, 24, 69, 1) 66%,
+		rgba(0, 18, 51, 1) 100%
+	);
+}

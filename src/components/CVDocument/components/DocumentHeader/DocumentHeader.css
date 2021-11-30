@@ -1,0 +1,65 @@
+.DocumentHeader {
+	display: grid;
+	grid-template-rows: 128px auto;
+	row-gap: 16px;
+	padding: 1rem;
+	position: relative;
+}
+
+.DocumentHeader-ProfileImage {
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 4px solid #144552;
+	justify-self: center;
+}
+
+.DocumentHeader-Name {
+	color: #33415c;
+	font-size: 1.4rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.DocumentHeader-TechnologiesContainer {
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.DocumentHeader-TechnologyChip {
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+.DocumentHeader-ExternalLinks {
+	display: grid;
+	grid-template-columns: repeat(2, 32px);
+	column-gap: 8px;
+	justify-content: center;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+}
+
+.DocumentHeader-ExternalLink {
+	width: 32px;
+	height: 32px;
+}
+
+.DocumentHeader-ExternalLink:hover {
+	cursor: pointer;
+}
+
+.DocumentHeader-ExternalLink-Image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+@media only screen and (min-width: 500px) {
+}

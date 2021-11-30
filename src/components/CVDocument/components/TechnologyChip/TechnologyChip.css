@@ -1,0 +1,21 @@
+.TechnologyChip {
+	display: grid;
+	grid-template-columns: 24px minmax(0, 1fr);
+	align-items: center;
+	column-gap: 8px;
+	border: 1px solid #979dac7c;
+	padding: 4px;
+	border-radius: 16px;
+}
+
+.TechnologyChip-Image {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.TechnologyChip-Text {
+	font-size: 1rem;
+	color: #33415C;
+}
