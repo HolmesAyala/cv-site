@@ -1,9 +1,17 @@
 .ExperienceSection {
-  padding: 1rem;
+	padding: 1rem;
 }
 
 .ExperienceSection-Title {
 	font-size: 1.4rem;
 	color: #001845;
 	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.ExperienceSection-CompanySeparator {
+	width: 100%;
+	height: 2px;
+	background-color: #eeeeee;
+	margin: 1rem 0;
 }

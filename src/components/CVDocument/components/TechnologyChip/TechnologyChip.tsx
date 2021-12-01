@@ -4,10 +4,10 @@ import './TechnologyChip.css';
 // Utils
 import classnames from 'classnames';
 
-interface ITechnologyChipProps {
+export interface ITechnologyChipProps {
 	className?: string;
-	logo: string;
-	text: string;
+	logo?: string;
+	text?: string;
 }
 
 const TechnologyChip: React.FC<ITechnologyChipProps> = ({ className, logo, text }) => {
@@ -15,7 +15,7 @@ const TechnologyChip: React.FC<ITechnologyChipProps> = ({ className, logo, text 
 		<div className={classnames('TechnologyChip', className)}>
 			<img className='TechnologyChip-Image' src={logo} alt={text} />
 
-			<p className='TechnologyChip-Text'>{text}</p>
+			<p className='TechnologyChip-Text'>{text || '-'}</p>
 		</div>
 	);
 };

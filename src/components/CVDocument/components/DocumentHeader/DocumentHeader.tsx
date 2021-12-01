@@ -3,14 +3,15 @@ import React from 'react';
 import './DocumentHeader.css';
 // Assets
 import profileImage from './assets/profile-image.jpeg';
-import javascriptLogo from '../../../../assets/javascript-logo.png';
-import reactLogo from '../../../../assets/react-logo.png';
-import electronJs from '../../../../assets/electron-js.png';
-import nodeJsLogo from '../../../../assets/node-js-logo.png';
 import linkedinLogo from './assets/linkedin-logo.png';
 import githubLogo from './assets/github-logo.png';
 // Components
-import TechnologyChip from '../../components/TechnologyChip/TechnologyChip';
+import {
+	JavascriptChip,
+	ReactChip,
+	ElectronChip,
+	NodeChip,
+} from '../../components/predefinedChips';
 
 const DocumentHeader = () => {
 	return (
@@ -41,29 +42,13 @@ const DocumentHeader = () => {
 				<h1 className='DocumentHeader-Name'>Holmes Yesid Ayala Yaguara</h1>
 
 				<div className='DocumentHeader-TechnologiesContainer'>
-					<TechnologyChip
-						className='DocumentHeader-TechnologyChip'
-						logo={javascriptLogo}
-						text='Javascript'
-					/>
+					<JavascriptChip className='DocumentHeader-TechnologyChip' />
 
-					<TechnologyChip
-						className='DocumentHeader-TechnologyChip'
-						logo={reactLogo}
-						text='React JS'
-					/>
+					<ReactChip className='DocumentHeader-TechnologyChip' />
 
-					<TechnologyChip
-						className='DocumentHeader-TechnologyChip'
-						logo={electronJs}
-						text='Electron JS'
-					/>
+					<ElectronChip className='DocumentHeader-TechnologyChip' />
 
-					<TechnologyChip
-						className='DocumentHeader-TechnologyChip'
-						logo={nodeJsLogo}
-						text='Node JS'
-					/>
+					<NodeChip className='DocumentHeader-TechnologyChip' />
 				</div>
 			</div>
 		</div>
