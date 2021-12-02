@@ -1,0 +1,49 @@
+.ImageSlider {
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+	background-color: #eeeeee;
+	position: relative;
+}
+
+.ImageSlider-Container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.ImageSlider-CurrentImageContainer {
+	width: 100%;
+	height: 100%;
+}
+
+.ImageSlider-ButtonToOpenDialog {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: none;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ImageSlider-ButtonToOpenDialog:hover {
+	cursor: pointer;
+}
+
+.ImageSlider-VisibilityIcon {
+	width: 42px;
+}
+
+.ImageSlider-CurrentImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}

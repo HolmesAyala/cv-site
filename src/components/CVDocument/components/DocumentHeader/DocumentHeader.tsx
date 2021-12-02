@@ -7,7 +7,7 @@ import linkedinLogo from './assets/linkedin-logo.png';
 import githubLogo from './assets/github-logo.png';
 // Components
 import {
-	JavascriptChip,
+	TypescriptChip,
 	ReactChip,
 	ElectronChip,
 	NodeChip,
@@ -42,7 +42,7 @@ const DocumentHeader = () => {
 				<h1 className='DocumentHeader-Name'>Holmes Yesid Ayala Yaguara</h1>
 
 				<div className='DocumentHeader-TechnologiesContainer'>
-					<JavascriptChip className='DocumentHeader-TechnologyChip' />
+					<TypescriptChip className='DocumentHeader-TechnologyChip' />
 
 					<ReactChip className='DocumentHeader-TechnologyChip' />
 

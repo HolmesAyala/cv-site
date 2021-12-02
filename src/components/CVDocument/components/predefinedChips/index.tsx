@@ -8,6 +8,8 @@ import socketIOLogo from '../../../../assets/socket-io-logo.png';
 import sassLogo from '../../../../assets/sass-logo.png';
 import mqttLogo from '../../../../assets/mqtt-logo.png';
 import postgresqlLogo from '../../../../assets/postgresql-logo.png';
+import typescriptLogo from '../../../../assets/typescript-logo.png';
+import reduxLogo from '../../../../assets/redux-logo.png';
 // Components
 import TechnologyChip, { ITechnologyChipProps } from '../TechnologyChip/TechnologyChip';
 
@@ -41,4 +43,12 @@ export const MqttChip: React.FC<ITechnologyChipProps> = ({ logo, text, ...props 
 
 export const PostgresqlChip: React.FC<ITechnologyChipProps> = ({ logo, text, ...props }) => {
 	return <TechnologyChip logo={logo || postgresqlLogo} text={text || 'PostgreSQL'} {...props} />;
+};
+
+export const TypescriptChip: React.FC<ITechnologyChipProps> = ({ logo, text, ...props }) => {
+	return <TechnologyChip logo={logo || typescriptLogo} text={text || 'Typescript'} {...props} />;
+};
+
+export const ReduxChip: React.FC<ITechnologyChipProps> = ({ logo, text, ...props }) => {
+	return <TechnologyChip logo={logo || reduxLogo} text={text || 'Redux'} {...props} />;
 };

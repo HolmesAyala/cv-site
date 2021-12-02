@@ -1,0 +1,152 @@
+.ImageSliderDialog {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+}
+
+.ImageSliderDialog_closed {
+	display: none;
+}
+
+.ImageSliderDialog-CloseButton {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 48px;
+	height: 48px;
+	border: none;
+	border-bottom-left-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+.ImageSliderDialog-CloseButton:hover {
+	cursor: pointer;
+}
+
+.ImageSliderDialog-BeforeButton,
+.ImageSliderDialog-NextButton {
+	position: absolute;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+}
+
+.ImageSliderDialog-BeforeButton:hover,
+.ImageSliderDialog-NextButton:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ImageSliderDialog-BeforeIcon,
+.ImageSliderDialog-NextIcon {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	width: 32px;
+}
+
+.ImageSliderDialog-BeforeButton {
+	left: 0;
+	top: 0;
+	width: 32px;
+	height: 100%;
+}
+
+.ImageSliderDialog-BeforeButton:hover .ImageSliderDialog-BeforeIcon {
+	background-color: transparent;
+}
+
+.ImageSliderDialog-NextButton {
+	right: 0;
+	top: 0;
+	width: 32px;
+	height: 100%;
+}
+
+.ImageSliderDialog-NextButton:hover .ImageSliderDialog-NextIcon {
+	background-color: transparent;
+}
+
+.ImageSliderDialog-ImageSelector {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 32px);
+	justify-content: center;
+	padding-bottom: 8px;
+}
+
+.ImageSliderDialog-ImageSelectorButton {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	border: none;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ImageSliderDialog-ImageSelectorButton::before {
+	content: ' ';
+	width: 8px;
+	height: 8px;
+	background-color: #888787;
+	border-radius: 50%;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.ImageSliderDialog-ImageSelectorButton:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.ImageSliderDialog-ImageSelectorButton_selected {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.ImageSliderDialog-ImageSelectorButton_selected::before {
+	background-color: white;
+}
+
+.ImageSliderDialog-CurrentImage {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@media only screen and (min-width: 650px) {
+	.ImageSliderDialog-CloseButton {
+		width: 96px;
+		height: 96px;
+	}
+
+	.ImageSliderDialog-CloseIcon {
+		width: 64px;
+	}
+
+	.ImageSliderDialog-BeforeIcon,
+	.ImageSliderDialog-NextIcon {
+		width: 64px;
+	}
+
+	.ImageSliderDialog-BeforeButton {
+		width: 64px;
+	}
+
+	.ImageSliderDialog-NextButton {
+		width: 64px;
+	}
+}
