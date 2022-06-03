@@ -11,10 +11,6 @@
 	padding: 8px;
 }
 
-.ImageSliderDialog_closed {
-	display: none;
-}
-
 .ImageSliderDialog-CloseButton {
 	position: absolute;
 	top: 0;

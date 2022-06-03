@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 // Styles
 import './ImageSliderDialog.css';
 import zIndex from '../../../../../../../../../../styles/zIndex';
@@ -28,6 +28,8 @@ const ImageSliderDialog: React.FC<IImageSliderDialodProps> = ({
 	onNext = () => {},
 	onSelect = () => {},
 }) => {
+	const closeButtonRef = useRef<HTMLButtonElement | null>(null);
+
 	/**
 	 * State
 	 */
@@ -66,6 +68,12 @@ const ImageSliderDialog: React.FC<IImageSliderDialodProps> = ({
 		}
 	}, [open, onClose, onBefore, onNext]);
 
+	useEffect(() => {
+		if (open && closeButtonRef.current) {
+			closeButtonRef.current.focus();
+		}
+	}, [open]);
+
 	/**
 	 * Events
 	 */
@@ -92,7 +100,12 @@ const ImageSliderDialog: React.FC<IImageSliderDialodProps> = ({
 	 */
 
 	const closeButton = (
-		<button className='ImageSliderDialog-CloseButton' style={closeButtonStyle} onClick={onClose}>
+		<button
+			ref={closeButtonRef}
+			className='ImageSliderDialog-CloseButton'
+			style={closeButtonStyle}
+			onClick={onClose}
+		>
 			<img className='ImageSliderDialog-CloseIcon' src={closeIcon} alt='close' />
 		</button>
 	);
@@ -137,11 +150,10 @@ const ImageSliderDialog: React.FC<IImageSliderDialodProps> = ({
 		);
 	}
 
+	if (!open) return null;
+
 	return (
-		<div
-			className={classnames('ImageSliderDialog', !open ? 'ImageSliderDialog_closed' : '')}
-			style={style}
-		>
+		<div className={classnames('ImageSliderDialog')} style={style}>
 			{closeButton}
 
 			{currentIndex > 0 && beforeButton}

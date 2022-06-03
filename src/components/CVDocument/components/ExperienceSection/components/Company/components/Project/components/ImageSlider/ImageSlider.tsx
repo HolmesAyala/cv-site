@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useRef } from 'react';
 // Styles
 import './ImageSlider.css';
 // Assets
@@ -11,6 +11,8 @@ interface IImageSliderProps {
 }
 
 const ImageSlider: React.FC<IImageSliderProps> = ({ images }) => {
+	const buttonToOpenDialogRef = useRef<HTMLButtonElement | null>(null);
+
 	/**
 	 * State
 	 */
@@ -29,6 +31,14 @@ const ImageSlider: React.FC<IImageSliderProps> = ({ images }) => {
 
 	const onCloseFromImageSliderDialog = useCallback(() => {
 		setImageSliderDialogIsOpen(false);
+
+		const buttonToOpenDialog = buttonToOpenDialogRef.current;
+
+		if (buttonToOpenDialog) {
+			setTimeout(() => {
+				buttonToOpenDialog.focus();
+			}, 1);
+		}
 	}, []);
 
 	const onBeforeFromImageSliderDialog = useCallback(() => {
@@ -63,21 +73,18 @@ const ImageSlider: React.FC<IImageSliderProps> = ({ images }) => {
 				<div className='ImageSlider-Container'>
 					<div className='ImageSlider-CurrentImageContainer'>
 						<button
+							ref={buttonToOpenDialogRef}
 							className='ImageSlider-ButtonToOpenDialog'
 							onClick={onClickInButtonToOpenDialog}
 						>
 							<img className='ImageSlider-VisibilityIcon' src={visibilityIcon} alt='visibility' />
 						</button>
 
-						<picture>
-							<source src='' />
-						</picture>
-
 						<img
 							className='ImageSlider-CurrentImage'
 							src={images[currentImageIndex]}
 							alt={images[currentImageIndex]}
-							loading='lazy'
+							loading='eager'
 						/>
 					</div>
 				</div>
