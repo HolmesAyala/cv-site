@@ -69,10 +69,15 @@ const ImageSlider: React.FC<IImageSliderProps> = ({ images }) => {
 							<img className='ImageSlider-VisibilityIcon' src={visibilityIcon} alt='visibility' />
 						</button>
 
+						<picture>
+							<source src='' />
+						</picture>
+
 						<img
 							className='ImageSlider-CurrentImage'
 							src={images[currentImageIndex]}
 							alt={images[currentImageIndex]}
+							loading='lazy'
 						/>
 					</div>
 				</div>

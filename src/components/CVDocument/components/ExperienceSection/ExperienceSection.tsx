@@ -3,30 +3,30 @@ import React from 'react';
 import './ExperienceSection.css';
 // Assets
 import arismaIcon from './assets/arisma/arisma-icon.jpg';
-import arismaGiveAlert from './assets/arisma/give-alert.png';
-import alertGiven from './assets/arisma/alert-given-fire-alert.png';
-import manageAlerts from './assets/arisma/manage-alerts.png';
+import arismaGiveAlert from './assets/arisma/give-alert.webp';
+import alertGiven from './assets/arisma/alert-given-fire-alert.webp';
+import manageAlerts from './assets/arisma/manage-alerts.webp';
 // Topcoder assets
 import topcoderLogo from './assets/topcoder/topcoder-logo.png';
 // Topcoder assets - Slide manager
-import presentations from './assets/topcoder/real-business-slide-manager/presentations.png';
-import fullScreenPresentation from './assets/topcoder/real-business-slide-manager/full-screen-presentation.png';
-import createPresentation from './assets/topcoder/real-business-slide-manager/create-presentation.png';
+import presentations from './assets/topcoder/real-business-slide-manager/presentations.webp';
+import fullScreenPresentation from './assets/topcoder/real-business-slide-manager/full-screen-presentation.webp';
+import createPresentation from './assets/topcoder/real-business-slide-manager/create-presentation.webp';
 // Topcoder assets - Digital identity app
-import digitalIdentityLanding from './assets/topcoder/digital-identity-app/digital-identity-landing.png';
-import digitalIdentityDashboard from './assets/topcoder/digital-identity-app/digital-identity-dashboard.png';
-import digitalIdentityConnections from './assets/topcoder/digital-identity-app/digital-identity-connections.png';
+import digitalIdentityLanding from './assets/topcoder/digital-identity-app/digital-identity-landing.webp';
+import digitalIdentityDashboard from './assets/topcoder/digital-identity-app/digital-identity-dashboard.webp';
+import digitalIdentityConnections from './assets/topcoder/digital-identity-app/digital-identity-connections.webp';
 // Topcoder assets - Castrol search
-import castrolWelcome from './assets/topcoder/castrol-application/welcome-message.png';
-import castrolSearch from './assets/topcoder/castrol-application/castrol-search.png';
-import castrolSearchResult from './assets/topcoder/castrol-application/castrol-search-result.png';
+import castrolWelcome from './assets/topcoder/castrol-application/welcome-message.webp';
+import castrolSearch from './assets/topcoder/castrol-application/castrol-search.webp';
+import castrolSearchResult from './assets/topcoder/castrol-application/castrol-search-result.webp';
 // Topcoder assets - Supply app
-import supplyAppLogin from './assets/topcoder/supply-app/supply-app-login.png';
-import supplyAppLoginIncorrect from './assets/topcoder/supply-app/supply-app-login-incorrect.png';
-import supplyAppLoginInactive from './assets/topcoder/supply-app/supply-app-login-inactive.png';
-import supplyAppLoginBlocked from './assets/topcoder/supply-app/supply-app-login-blocked.png';
-import supplyAppRegister from './assets/topcoder/supply-app/supply-app-register.png';
-import supplyAppRegisterSuccess from './assets/topcoder/supply-app/supply-app-register-success.png';
+import supplyAppLogin from './assets/topcoder/supply-app/supply-app-login.webp';
+import supplyAppLoginIncorrect from './assets/topcoder/supply-app/supply-app-login-incorrect.webp';
+import supplyAppLoginInactive from './assets/topcoder/supply-app/supply-app-login-inactive.webp';
+import supplyAppLoginBlocked from './assets/topcoder/supply-app/supply-app-login-blocked.webp';
+import supplyAppRegister from './assets/topcoder/supply-app/supply-app-register.webp';
+import supplyAppRegisterSuccess from './assets/topcoder/supply-app/supply-app-register-success.webp';
 // Components
 import Company from './components/Company/Company';
 import {
