@@ -1,6 +1,6 @@
 # CV Site
 
-Application to show the mi current cv.
+Application to show my current cv.
 
 ## Scripts
 
